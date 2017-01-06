@@ -1,0 +1,13 @@
+<h1 align="left"><%= @user.name %> Next Package</h1>
+
+<div>
+  <td align="left">Box code: <%= @code %></td>
+</div>
+
+<div>
+  <ul>
+    <% @contents.each do |c| %>
+      <li><%= c.item %></li>
+    <% end %>
+  </ul>
+</div>

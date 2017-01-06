@@ -1,0 +1,11 @@
+<h1>Welcome to the Order App</h1>
+
+<% flash.each do |key, value| %>
+  <div class="alert alert-<%= key %>"><%= value %></div>
+<% end %>
+
+<ul>
+  <li><%= link_to "Customers", users_path %></li>
+  <li><%= link_to "Get Latest Box Data", box_feed_path %></li>
+  <li><%= link_to "View Latest Box Data", boxes_path %></li>
+</ul>
